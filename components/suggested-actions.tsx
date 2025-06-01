@@ -19,24 +19,24 @@ function PureSuggestedActions({
 }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'Explain the registration process',
+      label: 'for new students at KNUST',
+      action: 'Explain the registration process for new students at KNUST',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: 'List the requirements',
+      label: 'for graduation at KNUST',
+      action: 'List the requirements for graduation at KNUST',
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: 'Help me understand the grading system',
+      label: 'used at KNUST',
+      action: 'Help me understand the grading system used at KNUST',
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: 'What are the library',
+      label: 'opening hours at KNUST?',
+      action: 'What are the library opening hours at KNUST?',
     },
   ];
 

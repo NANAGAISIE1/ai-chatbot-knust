@@ -1,5 +1,4 @@
 'use client';
-
 import type { Attachment, UIMessage } from 'ai';
 import cx from 'classnames';
 import type React from 'react';
@@ -17,7 +16,6 @@ import { toast } from 'sonner';
 import { useLocalStorage, useWindowSize } from 'usehooks-ts';
 
 import { ArrowUpIcon, PaperclipIcon, StopIcon } from './icons';
-import { PreviewAttachment } from './preview-attachment';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { SuggestedActions } from './suggested-actions';
@@ -230,7 +228,7 @@ function PureMultimodalInput({
           />
         )}
 
-      <input
+      {/* <input
         type="file"
         className="fixed -top-4 -left-4 size-0.5 opacity-0 pointer-events-none"
         ref={fileInputRef}
@@ -260,7 +258,7 @@ function PureMultimodalInput({
             />
           ))}
         </div>
-      )}
+      )} */}
 
       <Textarea
         data-testid="multimodal-input"
@@ -291,9 +289,9 @@ function PureMultimodalInput({
         }}
       />
 
-      <div className="absolute bottom-0 p-2 w-fit flex flex-row justify-start">
+      {/* <div className="absolute bottom-0 p-2 w-fit flex flex-row justify-start">
         <AttachmentsButton fileInputRef={fileInputRef} status={status} />
-      </div>
+      </div> */}
 
       <div className="absolute bottom-0 right-0 p-2 w-fit flex flex-row justify-end">
         {status === 'submitted' ? (
