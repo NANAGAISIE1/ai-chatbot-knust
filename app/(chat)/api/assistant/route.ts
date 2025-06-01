@@ -140,6 +140,7 @@ export async function POST(req: Request) {
             openai.beta.threads.runs.submitToolOutputsStream(
               threadId,
               runResult.id,
+              // {tool_outputs}
             ),
           );
         }
