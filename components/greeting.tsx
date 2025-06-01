@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import knustLogo from '../public/images/knust-logo.jpg';
+import knustLogo from '../public/images/knust-logo.svg';
 
 export const Greeting = () => {
   return (
@@ -33,13 +33,7 @@ export const Greeting = () => {
         transition={{ delay: 0.6 }}
         className="items-center justify-center flex"
       >
-        <Image
-          height={300}
-          width={300}
-          src={knustLogo}
-          alt="KSG AI Logo"
-          placeholder="blur"
-        />
+        <Image height={300} width={300} src={knustLogo} alt="KSG AI Logo" />
       </motion.div>
     </div>
   );
