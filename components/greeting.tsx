@@ -15,7 +15,7 @@ export const Greeting = () => {
         transition={{ delay: 0.5 }}
         className="text-2xl font-semibold"
       >
-        KSG AI (The KNUST Student Guide AI)
+        GESA AI
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 10 }}

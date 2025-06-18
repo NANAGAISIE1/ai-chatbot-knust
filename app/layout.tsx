@@ -1,14 +1,14 @@
-import { Toaster } from 'sonner';
+import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from 'sonner';
 
-import './globals.css';
 import { SessionProvider } from 'next-auth/react';
+import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gesaknust.info'),
-  title: 'KSG AI By JAF',
+  title: 'GESA AI By JAF',
   description: 'An AI chatbot for KNUST Students',
 };
 
