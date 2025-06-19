@@ -1,9 +1,9 @@
+import { openai } from '@ai-sdk/openai';
 import {
   customProvider,
   extractReasoningMiddleware,
   wrapLanguageModel,
 } from 'ai';
-import { openai } from '@ai-sdk/openai';
 import { isTestEnvironment } from '../constants';
 import {
   artifactModel,
@@ -23,13 +23,13 @@ export const myProvider = isTestEnvironment
     })
   : customProvider({
       languageModels: {
-        'chat-model': openai('gpt-4-turbo'), // Changed model
+        'chat-model': openai('gpt-4.1-nano'), // Changed model
         'chat-model-reasoning': wrapLanguageModel({
-          model: openai('gpt-4-turbo'), // Changed model
+          model: openai('gpt-4.1-nano'), // Changed model
           middleware: extractReasoningMiddleware({ tagName: 'think' }),
         }),
-        'title-model': openai('gpt-3.5-turbo'), // Changed model
-        'artifact-model': openai('gpt-3.5-turbo'), // Changed model
+        'title-model': openai('gpt-4.1-nano'), // Changed model
+        'artifact-model': openai('gpt-4.1-nano'), // Changed model
       },
       imageModels: {
         'small-model': openai.image('dall-e-3'), // Changed model
